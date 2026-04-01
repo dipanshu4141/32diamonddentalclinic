@@ -12,9 +12,6 @@
     href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@300;400;500;600;700;800;900&display=swap"
     rel="stylesheet">
   <style>
-    /* ═══════════════════════════════════════════════
-   RESET & BASE
-═══════════════════════════════════════════════ */
     *,
     *::before,
     *::after {
@@ -33,7 +30,7 @@
       color: #1a1a2e;
       overflow-x: hidden;
       line-height: 1.6;
-      -webkit-font-smoothing: antialiased;
+      -webkit-font-smoothing: antialiased
     }
 
     a {
@@ -65,53 +62,42 @@
       appearance: none
     }
 
-    /* ═══════════════════════════════════════════════
-   DESIGN TOKENS
-═══════════════════════════════════════════════ */
     :root {
       --navy: #0f172a;
-      /* Dark slate */
       --navy-dk: #020617;
-      /* Darker slate */
       --sky: #0891b2;
-      /* Teal/Cyan */
       --sky-lt: #cffafe;
-      /* Light cyan */
       --sky-lt2: #f0fdfa;
-      /* Very light cyan */
       --orange: #f59e0b;
       --white: #ffffff;
       --text: #475569;
-      /* Slate body */
       --border: #cbd5e1;
       --r: 14px;
       --r-lg: 22px;
       --r-xl: 32px;
-      /* spacing */
       --sec-y: 90px;
       --sec-y-m: 56px;
       --sec-y-s: 40px;
     }
 
-
-    /* Premium Micro-animations */
+    /* Micro-animations */
     .btn-pill {
       background: linear-gradient(135deg, var(--sky), #06b6d4);
       background-size: 200% auto;
-      transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+      transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1)
     }
 
     .btn-pill:hover {
       background-position: right center;
       box-shadow: 0 10px 30px rgba(8, 145, 178, 0.4);
-      transform: translateY(-3px);
+      transform: translateY(-3px)
     }
 
     .svc-tile {
       transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
       overflow: hidden;
       position: relative;
-      z-index: 1;
+      z-index: 1
     }
 
     .svc-tile::before {
@@ -124,23 +110,22 @@
       background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.4), transparent);
       transform: translateX(-100%);
       transition: 0.6s;
-      z-index: -1;
+      z-index: -1
     }
 
     .svc-tile:hover::before {
-      transform: translateX(100%);
+      transform: translateX(100%)
     }
 
     .dr-card {
-      transition: all 0.4s ease;
+      transition: all 0.4s ease
     }
 
     .dr-card:hover {
       transform: translateY(-8px);
-      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.08)
     }
 
-    /* scrollbar */
     ::-webkit-scrollbar {
       width: 5px
     }
@@ -154,9 +139,7 @@
       border-radius: 99px
     }
 
-    /* ═══════════════════════════════════════════════
-   LAYOUT UTILITIES
-═══════════════════════════════════════════════ */
+    /* Layout */
     .W {
       max-width: 1240px;
       margin: 0 auto;
@@ -179,9 +162,7 @@
       text-align: center
     }
 
-    /* ═══════════════════════════════════════════════
-   TYPOGRAPHY
-═══════════════════════════════════════════════ */
+    /* Typography */
     h1,
     h2,
     h3,
@@ -189,7 +170,7 @@
     .sh,
     .sh-w {
       font-family: 'Outfit', sans-serif;
-      letter-spacing: -0.02em;
+      letter-spacing: -0.02em
     }
 
     .eyebrow {
@@ -199,7 +180,7 @@
       letter-spacing: 0.2em;
       text-transform: uppercase;
       color: var(--sky);
-      margin-bottom: 12px;
+      margin-bottom: 12px
     }
 
     h2.sh {
@@ -207,7 +188,7 @@
       font-weight: 800;
       color: var(--navy);
       line-height: 1.18;
-      margin-bottom: 16px;
+      margin-bottom: 16px
     }
 
     h2.sh-w {
@@ -215,7 +196,7 @@
       font-weight: 800;
       color: #fff;
       line-height: 1.18;
-      margin-bottom: 16px;
+      margin-bottom: 16px
     }
 
     p.sub {
@@ -225,9 +206,7 @@
       max-width: 580px
     }
 
-    /* ═══════════════════════════════════════════════
-   BUTTONS
-═══════════════════════════════════════════════ */
+    /* Buttons */
     .btn {
       display: inline-flex;
       align-items: center;
@@ -241,7 +220,7 @@
       border: none;
       cursor: pointer;
       transition: all 0.24s;
-      white-space: nowrap;
+      white-space: nowrap
     }
 
     .btn-pill {
@@ -249,7 +228,7 @@
       color: #fff;
       padding: 13px 28px;
       border-radius: 99px;
-      box-shadow: 0 6px 20px rgba(23, 162, 245, 0.32);
+      box-shadow: 0 6px 20px rgba(23, 162, 245, 0.32)
     }
 
     .btn-pill:hover {
@@ -280,14 +259,11 @@
       transform: translateY(-2px)
     }
 
-    /* Full width on mobile */
     .btn-full {
       width: 100%
     }
 
-    /* ═══════════════════════════════════════════════
-   REVEAL ANIMATIONS
-═══════════════════════════════════════════════ */
+    /* Reveal */
     .rv {
       opacity: 0;
       transform: translateY(22px);
@@ -315,9 +291,7 @@
       transition-delay: 0.32s
     }
 
-    /* ═══════════════════════════════════════════════
-   CHECK ITEMS
-═══════════════════════════════════════════════ */
+    /* Check items */
     .checks {
       display: flex;
       flex-direction: column;
@@ -342,7 +316,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      flex-shrink: 0;
+      flex-shrink: 0
     }
 
     .ci-icon svg {
@@ -353,9 +327,7 @@
       color: #fff
     }
 
-    /* ═══════════════════════════════════════════════
-   HEADER
-═══════════════════════════════════════════════ */
+    /* ── HEADER ── */
     .hdr {
       background: rgba(255, 255, 255, 0.85);
       backdrop-filter: blur(12px);
@@ -364,7 +336,7 @@
       box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
       position: sticky;
       top: 0;
-      z-index: 900;
+      z-index: 900
     }
 
     .hdr-wrap {
@@ -373,10 +345,9 @@
       justify-content: space-between;
       padding: 12px 0;
       gap: 12px;
-      position: relative;
+      position: relative
     }
 
-    /* Logo — image-based so it's swappable */
     .logo {
       display: flex;
       align-items: center;
@@ -389,14 +360,13 @@
       width: auto;
       max-width: 160px;
       object-fit: contain;
-      display: block;
+      display: block
     }
 
-    /* Fallback text when logo img is empty / missing */
     .logo-fallback {
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 10px
     }
 
     .logo-icon-box {
@@ -407,7 +377,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      flex-shrink: 0;
+      flex-shrink: 0
     }
 
     .logo-icon-box svg {
@@ -416,24 +386,23 @@
 
     .logo-text-box strong {
       display: block;
-      font-size: 2rem;
+      font-size: 1.1rem;
       font-weight: 800;
       color: var(--navy);
       line-height: 1.1;
-      letter-spacing: -0.01em;
+      letter-spacing: -0.01em
     }
 
     .logo-text-box span {
       font-size: 0.6rem;
-      color: var(--gray);
+      color: #888;
       font-weight: 500;
       letter-spacing: 0.05em;
       text-transform: uppercase;
       text-align: right;
-      display: block;
+      display: block
     }
 
-    /* Desktop nav */
     .nav {
       display: flex;
       align-items: center;
@@ -447,7 +416,7 @@
       font-weight: 500;
       color: #444;
       transition: all 0.18s;
-      white-space: nowrap;
+      white-space: nowrap
     }
 
     .nav a:hover,
@@ -456,7 +425,6 @@
       background: var(--sky-lt)
     }
 
-    /* Header right */
     .hdr-right {
       display: flex;
       align-items: center;
@@ -478,7 +446,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      flex-shrink: 0;
+      flex-shrink: 0
     }
 
     .hdr-phone-icon svg {
@@ -499,7 +467,6 @@
       display: block
     }
 
-    /* Book CTA in header */
     .hdr-cta {
       background: var(--sky);
       color: #fff;
@@ -510,7 +477,7 @@
       letter-spacing: 0.04em;
       box-shadow: 0 4px 14px rgba(23, 162, 245, 0.3);
       transition: all 0.2s;
-      white-space: nowrap;
+      white-space: nowrap
     }
 
     .hdr-cta:hover {
@@ -518,7 +485,6 @@
       transform: translateY(-1px)
     }
 
-    /* Hamburger */
     .burger {
       display: none;
       flex-direction: column;
@@ -529,7 +495,7 @@
       background: none;
       border: none;
       cursor: pointer;
-      padding: 4px;
+      padding: 4px
     }
 
     .burger span {
@@ -538,7 +504,7 @@
       background: var(--navy);
       border-radius: 99px;
       transition: all 0.3s;
-      display: block;
+      display: block
     }
 
     .burger.open span:nth-child(1) {
@@ -554,12 +520,11 @@
       transform: translateY(-7px) rotate(-45deg)
     }
 
-    /* Mobile nav drawer */
     .mob-nav {
       display: none;
       background: #fff;
       border-top: 1px solid #f0f0f0;
-      padding: 12px 0 16px;
+      padding: 12px 0 16px
     }
 
     .mob-nav.open {
@@ -572,8 +537,7 @@
       font-size: 0.9rem;
       font-weight: 500;
       color: #333;
-      transition: all 0.18s;
-      border-radius: 0;
+      transition: all 0.18s
     }
 
     .mob-nav a:hover {
@@ -592,165 +556,23 @@
       font-weight: 700;
       text-align: center;
       letter-spacing: 0.04em;
-      box-shadow: 0 4px 14px rgba(23, 162, 245, 0.3);
+      box-shadow: 0 4px 14px rgba(23, 162, 245, 0.3)
     }
 
-    /* ═══════════════════════════════════════════════
-   HERO
-═══════════════════════════════════════════════ */
-    .hero {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      min-height: 88vh;
-      overflow: hidden;
-    }
-
-    .hero-left {
-      background: #fff;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      padding: 64px 56px 64px 0;
-      position: relative;
-    }
-
-    /* diagonal right edge */
-    .hero-left::after {
-      display: none;
-    }
-
-    .hero-dots {
-      position: absolute;
-      bottom: 64px;
-      left: 0;
-      display: grid;
-      grid-template-columns: repeat(5, 1fr);
-      gap: 8px;
-      pointer-events: none;
-    }
-
-    .hero-dots span {
-      width: 5px;
-      height: 5px;
-      border-radius: 50%;
-      background: #dde4f0;
-      display: block
-    }
-
-    .hero-tag {
-      font-size: 0.72rem;
-      font-weight: 600;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      color: var(--sky);
-      margin-bottom: 16px;
-      display: block;
-    }
-
-    .hero h1 {
-      font-size: clamp(2rem, 4vw, 3.6rem);
-      font-weight: 800;
-      color: var(--navy);
-      line-height: 1.15;
-      letter-spacing: -0.02em;
-      margin-bottom: 6px;
-    }
-
-    .smile-word {
-      position: relative;
-      display: inline-block
-    }
-
-    .smile-word::after {
-      content: '';
-      position: absolute;
-      bottom: -4px;
-      left: 0;
-      right: 0;
-      height: 10px;
-      background: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 10' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0,7 Q50,-1 100,5 Q150,11 200,3' stroke='%2317a2f5' stroke-width='2.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat center/100%;
-    }
-
-    .hero-pills {
-      display: flex;
-      gap: 12px;
-      flex-wrap: wrap;
-      margin: 24px 0
-    }
-
-    .h-pill {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      padding: 10px 16px;
-      border-radius: 99px;
-      background: #fff;
-      border: 1px solid #e0e8f5;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
-      font-size: 0.78rem;
-      font-weight: 600;
-      color: var(--navy);
-    }
-
-    .h-pill-icon {
-      width: 32px;
-      height: 32px;
-      border-radius: 50%;
-      background: var(--sky-lt);
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 0.9rem;
-      flex-shrink: 0;
-    }
-
-    .hero-desc {
-      font-size: 0.9rem;
-      color: var(--text);
-      max-width: 420px;
-      margin-bottom: 32px;
-      line-height: 1.8
-    }
-
-    .hero-right {
-      position: relative;
-      overflow: hidden;
-      background: var(--sky-lt2);
-    }
-
-    .hero-right img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block
-    }
-
-    .hero-right .img-ph {
-      width: 100%;
-      height: 100%;
-      min-height: 400px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 6rem;
-    }
-
-    /* ═══════════════════════════════════════════════
-   MARQUEE STRIP
-═══════════════════════════════════════════════ */
+    /* ── MARQUEE ── */
     .marquee {
       background: var(--sky-lt2);
       border-top: 1px solid #d8ecf8;
       border-bottom: 1px solid #d8ecf8;
       padding: 12px 0;
-      overflow: hidden;
+      overflow: hidden
     }
 
     .marquee-track {
       display: flex;
       animation: mq-run 28s linear infinite;
       width: max-content;
-      white-space: nowrap;
+      white-space: nowrap
     }
 
     .mq-item {
@@ -760,7 +582,7 @@
       padding: 0 32px;
       font-size: 0.85rem;
       font-weight: 700;
-      color: var(--navy);
+      color: var(--navy)
     }
 
     .mq-avatar {
@@ -775,7 +597,7 @@
       font-size: 0.7rem;
       color: #fff;
       font-weight: 700;
-      flex-shrink: 0;
+      flex-shrink: 0
     }
 
     .mq-avatar img {
@@ -798,9 +620,267 @@
       animation-play-state: paused
     }
 
-    /* ═══════════════════════════════════════════════
-   SERVICES
-═══════════════════════════════════════════════ */
+    /* ── HERO ── */
+    .hero {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      min-height: 88vh;
+      overflow: hidden
+    }
+
+    .hero-left {
+      background: #fff;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      padding: 64px 56px 64px 0;
+      position: relative
+    }
+
+    .hero-left::after {
+      display: none
+    }
+
+    .hero-dots {
+      position: absolute;
+      bottom: 64px;
+      left: 0;
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 8px;
+      pointer-events: none
+    }
+
+    .hero-dots span {
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: #dde4f0;
+      display: block
+    }
+
+    .hero-tag {
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+      color: var(--sky);
+      margin-bottom: 16px;
+      display: block
+    }
+
+    .hero h1 {
+      font-size: clamp(2rem, 4vw, 3.6rem);
+      font-weight: 800;
+      color: var(--navy);
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      margin-bottom: 6px
+    }
+
+    .smile-word {
+      position: relative;
+      display: inline-block
+    }
+
+    .smile-word::after {
+      content: '';
+      position: absolute;
+      bottom: -4px;
+      left: 0;
+      right: 0;
+      height: 10px;
+      background: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 10' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0,7 Q50,-1 100,5 Q150,11 200,3' stroke='%2317a2f5' stroke-width='2.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E") no-repeat center/100%
+    }
+
+    .hero-pills {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin: 24px 0
+    }
+
+    .h-pill {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 16px;
+      border-radius: 99px;
+      background: #fff;
+      border: 1px solid #e0e8f5;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.06);
+      font-size: 0.78rem;
+      font-weight: 600;
+      color: var(--navy)
+    }
+
+    .h-pill-icon {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: var(--sky-lt);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.9rem;
+      flex-shrink: 0
+    }
+
+    .hero-desc {
+      font-size: 0.9rem;
+      color: var(--text);
+      max-width: 420px;
+      margin-bottom: 32px;
+      line-height: 1.8
+    }
+
+    .hero-right {
+      position: relative;
+      overflow: hidden;
+      background: var(--sky-lt2)
+    }
+
+    .hero-right img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block
+    }
+
+    .hero-right .img-ph {
+      width: 100%;
+      height: 100%;
+      min-height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 6rem
+    }
+
+    /* ── HERO SLIDER ── */
+    .hero-slider {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background: var(--sky-lt2)
+    }
+
+    .hero-slide {
+      position: absolute;
+      inset: 0;
+      opacity: 0;
+      transition: opacity 0.9s ease;
+      pointer-events: none;
+      overflow: hidden;
+      background-size: cover;
+      background-position: 55% center
+    }
+
+    .hero-slide.active {
+      opacity: 1;
+      pointer-events: auto;
+      z-index: 1;
+      animation: hero-pan 15s linear forwards
+    }
+
+    .hero-slide img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      transform-origin: right center
+    }
+
+    .hero-slide.active img {
+      animation: hero-pan 15s linear forwards
+    }
+
+    @keyframes hero-pan {
+      0% {
+        object-position: right center;
+        transform: scale(1.08)
+      }
+
+      100% {
+        object-position: left center;
+        transform: scale(1.0)
+      }
+    }
+
+    .hero-slider-dots {
+      position: absolute;
+      bottom: 18px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 8px;
+      z-index: 2
+    }
+
+    .hsd {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.4);
+      cursor: pointer;
+      transition: all 0.3s;
+      border: none;
+      padding: 0
+    }
+
+    .hsd.on {
+      background: #fff;
+      width: 24px;
+      border-radius: 4px
+    }
+
+    .hero-slider .img-ph {
+      width: 100%;
+      height: 100%;
+      min-height: 400px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 6rem
+    }
+
+    .hs-arr {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 3;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      border: none;
+      cursor: pointer;
+      background: rgba(255, 255, 255, 0.85);
+      color: var(--navy);
+      font-size: 1.6rem;
+      line-height: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+      transition: all 0.2s
+    }
+
+    .hs-arr:hover {
+      background: #fff;
+      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.2);
+      transform: translateY(-50%) scale(1.08)
+    }
+
+    .hs-prev {
+      left: 14px
+    }
+
+    .hs-next {
+      right: 14px
+    }
+
+    /* ── SERVICES ── */
     .svc-sec {
       background: var(--sky-lt2);
       padding: var(--sec-y) 0
@@ -811,7 +891,7 @@
       grid-template-columns: 1fr auto;
       gap: 24px;
       align-items: flex-start;
-      margin-bottom: 48px;
+      margin-bottom: 48px
     }
 
     .svc-head-right {
@@ -844,7 +924,7 @@
       font-size: 0.68rem;
       color: var(--navy);
       font-weight: 700;
-      margin-left: -10px;
+      margin-left: -10px
     }
 
     .r-av:first-child {
@@ -893,7 +973,7 @@
       box-shadow: 0 2px 12px rgba(0, 0, 0, 0.05);
       border: 1.5px solid transparent;
       transition: all 0.26s;
-      cursor: default;
+      cursor: default
     }
 
     .svc-tile:hover {
@@ -910,7 +990,7 @@
       background: var(--sky);
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: center
     }
 
     .svc-icon svg {
@@ -928,7 +1008,7 @@
       border-radius: var(--r-lg);
       overflow: hidden;
       background: var(--sky-lt);
-      aspect-ratio: 2/3;
+      aspect-ratio: 2/3
     }
 
     .svc-photo img {
@@ -945,12 +1025,10 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 5rem;
+      font-size: 5rem
     }
 
-    /* ═══════════════════════════════════════════════
-   ABOUT
-═══════════════════════════════════════════════ */
+    /* ── ABOUT ── */
     .about-sec {
       background: #fff;
       padding: var(--sec-y) 0
@@ -978,13 +1056,13 @@
       aspect-ratio: 1;
       background: #f0f1f8;
       border-radius: 50%;
-      z-index: 0;
+      z-index: 0
     }
 
     .about-img-frame {
       position: relative;
       z-index: 1;
-      width: min(340px, 90%);
+      width: min(340px, 90%)
     }
 
     .about-img-frame img,
@@ -993,7 +1071,7 @@
       border-radius: var(--r-xl);
       display: block;
       aspect-ratio: 3/4;
-      object-fit: cover;
+      object-fit: cover
     }
 
     .about-img-frame .img-ph {
@@ -1001,7 +1079,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 6rem;
+      font-size: 6rem
     }
 
     .exp-badge {
@@ -1016,7 +1094,7 @@
       display: flex;
       align-items: center;
       gap: 12px;
-      box-shadow: 0 10px 32px rgba(11, 29, 139, 0.28);
+      box-shadow: 0 10px 32px rgba(11, 29, 139, 0.28)
     }
 
     .eb-icon {
@@ -1028,7 +1106,7 @@
       align-items: center;
       justify-content: center;
       flex-shrink: 0;
-      font-size: 1.3rem;
+      font-size: 1.3rem
     }
 
     .eb-strong {
@@ -1049,7 +1127,7 @@
       z-index: 0;
       display: grid;
       grid-template-columns: repeat(5, 1fr);
-      gap: 8px;
+      gap: 8px
     }
 
     .about-dots-deco span {
@@ -1070,7 +1148,7 @@
     .about-mini-img {
       border-radius: var(--r);
       overflow: hidden;
-      aspect-ratio: 4/3;
+      aspect-ratio: 4/3
     }
 
     .about-mini-img img,
@@ -1078,7 +1156,7 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
-      display: block;
+      display: block
     }
 
     .about-mini-img .img-ph {
@@ -1122,9 +1200,7 @@
       line-height: 1.4
     }
 
-    /* ═══════════════════════════════════════════════
-   WHY BEST (NAVY BG)
-═══════════════════════════════════════════════ */
+    /* ── WHY ── */
     .why-sec {
       background: var(--navy);
       padding: var(--sec-y) 0
@@ -1147,7 +1223,7 @@
       border-radius: var(--r-xl);
       overflow: hidden;
       aspect-ratio: 3/4;
-      background: var(--sky-lt);
+      background: var(--sky-lt)
     }
 
     .why-main img {
@@ -1176,7 +1252,7 @@
       aspect-ratio: 4/3;
       background: var(--sky-lt2);
       border: 4px solid #fff;
-      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2)
     }
 
     .why-inset img {
@@ -1208,7 +1284,7 @@
       gap: 11px;
       box-shadow: 0 8px 28px rgba(0, 0, 0, 0.15);
       white-space: nowrap;
-      z-index: 2;
+      z-index: 2
     }
 
     .wb-icon {
@@ -1220,7 +1296,7 @@
       align-items: center;
       justify-content: center;
       font-size: 1.2rem;
-      flex-shrink: 0;
+      flex-shrink: 0
     }
 
     .wb-strong {
@@ -1243,9 +1319,7 @@
       max-width: 460px
     }
 
-    /* ═══════════════════════════════════════════════
-   BEFORE / AFTER
-═══════════════════════════════════════════════ */
+    /* ── BEFORE / AFTER ── */
     .ba-sec {
       background: #fff;
       padding: var(--sec-y) 0
@@ -1265,7 +1339,7 @@
       user-select: none;
       cursor: col-resize;
       aspect-ratio: 4/3;
-      background: #f0f0f8;
+      background: #f0f0f8
     }
 
     .ba-side {
@@ -1321,7 +1395,7 @@
       transform: translateX(-50%);
       display: flex;
       align-items: center;
-      justify-content: center;
+      justify-content: center
     }
 
     .ba-btn {
@@ -1334,7 +1408,7 @@
       justify-content: center;
       box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
       color: var(--navy);
-      font-size: 0.8rem;
+      font-size: 0.8rem
     }
 
     .ba-lbl {
@@ -1345,7 +1419,7 @@
       font-size: 0.7rem;
       font-weight: 700;
       letter-spacing: 0.1em;
-      z-index: 4;
+      z-index: 4
     }
 
     .ba-lbl.b {
@@ -1364,9 +1438,7 @@
       margin-top: 22px
     }
 
-    /* ═══════════════════════════════════════════════
-   BOOKING
-═══════════════════════════════════════════════ */
+    /* ── BOOKING ── */
     .book-sec {
       background: var(--navy);
       padding: var(--sec-y) 0
@@ -1387,16 +1459,16 @@
       border-radius: var(--r-xl);
       padding: 32px;
       position: relative;
-      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1)
     }
 
     .book-card::before {
       content: '';
       position: absolute;
       inset: -7px;
-      border-radius: calc(var(--r-xl)+7px);
+      border-radius: calc(var(--r-xl) + 7px);
       border: 2px dashed rgba(255, 255, 255, 0.12);
-      pointer-events: none;
+      pointer-events: none
     }
 
     .book-card-title {
@@ -1406,7 +1478,7 @@
       line-height: 1.4;
       margin-bottom: 24px;
       text-decoration: underline;
-      text-underline-offset: 4px;
+      text-underline-offset: 4px
     }
 
     .bc-row {
@@ -1424,7 +1496,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      flex-shrink: 0;
+      flex-shrink: 0
     }
 
     .bc-ico svg {
@@ -1450,7 +1522,7 @@
       font-size: clamp(1.5rem, 2.5vw, 2rem);
       font-weight: 800;
       color: #fff;
-      margin-bottom: 6px;
+      margin-bottom: 6px
     }
 
     .book-form-wrap p {
@@ -1480,7 +1552,7 @@
       color: #fff;
       font-family: 'Inter', sans-serif;
       font-size: 0.88rem;
-      transition: all 0.2s;
+      transition: all 0.2s
     }
 
     .bf-field input::placeholder {
@@ -1490,7 +1562,7 @@
     .bf-field input:focus,
     .bf-field select:focus {
       border-color: var(--sky);
-      background: rgba(255, 255, 255, 0.14);
+      background: rgba(255, 255, 255, 0.14)
     }
 
     .bf-field select {
@@ -1518,7 +1590,7 @@
       letter-spacing: 0.08em;
       text-transform: uppercase;
       box-shadow: 0 6px 20px rgba(23, 162, 245, 0.4);
-      transition: all 0.24s;
+      transition: all 0.24s
     }
 
     .book-submit:hover {
@@ -1527,9 +1599,7 @@
       transform: translateY(-2px)
     }
 
-    /* ═══════════════════════════════════════════════
-   TEAM
-═══════════════════════════════════════════════ */
+    /* ── TEAM ── */
     .team-sec {
       background: var(--sky-lt2);
       padding: var(--sec-y) 0
@@ -1557,7 +1627,7 @@
       overflow: hidden;
       box-shadow: 0 2px 14px rgba(0, 0, 0, 0.06);
       transition: all 0.28s;
-      position: relative;
+      position: relative
     }
 
     .dr-card:hover {
@@ -1573,7 +1643,7 @@
       display: flex;
       align-items: flex-end;
       justify-content: center;
-      overflow: hidden;
+      overflow: hidden
     }
 
     .dr-photo::before {
@@ -1584,7 +1654,7 @@
       left: 50%;
       transform: translateX(-50%);
       opacity: 0.09;
-      line-height: 1;
+      line-height: 1
     }
 
     .dr-photo img {
@@ -1593,7 +1663,7 @@
       object-fit: contain;
       display: block;
       position: relative;
-      z-index: 1;
+      z-index: 1
     }
 
     .dr-photo .img-ph {
@@ -1605,7 +1675,7 @@
       font-size: 6rem;
       padding-bottom: 0;
       position: relative;
-      z-index: 1;
+      z-index: 1
     }
 
     .dr-socials {
@@ -1618,7 +1688,7 @@
       gap: 8px;
       background: rgba(11, 29, 139, 0.35);
       opacity: 0;
-      transition: opacity 0.25s;
+      transition: opacity 0.25s
     }
 
     .dr-card:hover .dr-socials {
@@ -1638,7 +1708,7 @@
       color: var(--navy);
       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.12);
       transition: all 0.2s;
-      cursor: pointer;
+      cursor: pointer
     }
 
     .dr-soc:hover {
@@ -1668,9 +1738,7 @@
       margin-top: 40px
     }
 
-    /* ═══════════════════════════════════════════════
-   TESTIMONIAL (SPLIT FULL WIDTH)
-═══════════════════════════════════════════════ */
+    /* ── TESTIMONIAL ── */
     .testi-sec {
       display: grid;
       grid-template-columns: 1fr 1fr
@@ -1680,7 +1748,7 @@
       position: relative;
       overflow: hidden;
       background: var(--sky-lt);
-      min-height: 480px;
+      min-height: 480px
     }
 
     .testi-photo img {
@@ -1707,7 +1775,7 @@
       flex-direction: column;
       justify-content: center;
       position: relative;
-      overflow: hidden;
+      overflow: hidden
     }
 
     .testi-content::before {
@@ -1718,7 +1786,7 @@
       right: -16px;
       opacity: 0.06;
       line-height: 1;
-      pointer-events: none;
+      pointer-events: none
     }
 
     .testi-deco-dots {
@@ -1727,7 +1795,7 @@
       right: 44px;
       display: grid;
       grid-template-columns: repeat(6, 1fr);
-      gap: 7px;
+      gap: 7px
     }
 
     .testi-deco-dots span {
@@ -1750,7 +1818,7 @@
       color: rgba(255, 255, 255, 0.76);
       font-style: italic;
       margin-bottom: 26px;
-      line-height: 1.78;
+      line-height: 1.78
     }
 
     .testi-user {
@@ -1771,7 +1839,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 1.2rem;
+      font-size: 1.2rem
     }
 
     .testi-av img {
@@ -1827,7 +1895,7 @@
       justify-content: center;
       color: #fff;
       cursor: pointer;
-      transition: all 0.2s;
+      transition: all 0.2s
     }
 
     .nav-btn:hover {
@@ -1835,9 +1903,7 @@
       border-color: var(--sky)
     }
 
-    /* ═══════════════════════════════════════════════
-   FAQ
-═══════════════════════════════════════════════ */
+    /* ── FAQ ── */
     .faq-sec {
       background: var(--sky-lt2);
       padding: var(--sec-y) 0
@@ -1877,7 +1943,7 @@
       font-size: 0.92rem;
       font-weight: 700;
       color: var(--navy);
-      transition: color 0.2s;
+      transition: color 0.2s
     }
 
     .faq-q:hover,
@@ -1898,7 +1964,7 @@
       font-size: 1rem;
       font-weight: 400;
       line-height: 1;
-      transition: all 0.25s;
+      transition: all 0.25s
     }
 
     .faq-item.open .faq-tog {
@@ -1926,7 +1992,7 @@
     .faq-right {
       border-radius: var(--r-xl);
       overflow: hidden;
-      background: var(--sky-lt);
+      background: var(--sky-lt)
     }
 
     .faq-right img {
@@ -1942,12 +2008,10 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      font-size: 6rem;
+      font-size: 6rem
     }
 
-    /* ═══════════════════════════════════════════════
-   FOOTER
-═══════════════════════════════════════════════ */
+    /* ── FOOTER ── */
     footer {
       background: #07122a;
       padding: 64px 0 24px
@@ -2009,7 +2073,7 @@
       color: rgba(255, 255, 255, 0.38);
       font-size: 0.8rem;
       font-weight: 700;
-      transition: all 0.2s;
+      transition: all 0.2s
     }
 
     .fsoc:hover {
@@ -2024,7 +2088,7 @@
       font-weight: 700;
       margin-bottom: 16px;
       text-transform: uppercase;
-      letter-spacing: 0.12em;
+      letter-spacing: 0.12em
     }
 
     .footer-col ul {
@@ -2050,7 +2114,7 @@
       align-items: center;
       justify-content: space-between;
       flex-wrap: wrap;
-      gap: 10px;
+      gap: 10px
     }
 
     .footer-bottom p {
@@ -2058,9 +2122,7 @@
       color: rgba(255, 255, 255, 0.24)
     }
 
-    /* ═══════════════════════════════════════════════
-   FLOATING BUTTONS
-═══════════════════════════════════════════════ */
+    /* ── FLOATING ── */
     .wa-float {
       position: fixed;
       bottom: 24px;
@@ -2075,7 +2137,7 @@
       justify-content: center;
       box-shadow: 0 6px 24px rgba(37, 211, 102, 0.4);
       transition: transform 0.25s;
-      animation: wa-bob 3.5s ease-in-out infinite;
+      animation: wa-bob 3.5s ease-in-out infinite
     }
 
     .wa-float:hover {
@@ -2116,7 +2178,7 @@
       border: none;
       opacity: 0;
       transition: opacity 0.25s, background 0.2s;
-      color: #fff;
+      color: #fff
     }
 
     .top-btn.show {
@@ -2127,9 +2189,7 @@
       background: var(--sky)
     }
 
-    /* ═══════════════════════════════════════════════
-   MOBILE BOOKING STRIP (only on mobile)
-═══════════════════════════════════════════════ */
+    /* ── MOBILE CTA STRIP ── */
     .mob-cta-strip {
       display: none;
       position: fixed;
@@ -2141,7 +2201,7 @@
       padding: 12px 16px;
       flex-direction: row;
       gap: 10px;
-      box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.18);
+      box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.18)
     }
 
     .mob-cta-call {
@@ -2156,7 +2216,7 @@
       padding: 12px;
       color: #fff;
       font-size: 0.82rem;
-      font-weight: 700;
+      font-weight: 700
     }
 
     .mob-cta-book {
@@ -2171,530 +2231,562 @@
       color: #fff;
       font-size: 0.82rem;
       font-weight: 700;
-      box-shadow: 0 4px 14px rgba(23, 162, 245, 0.35);
+      box-shadow: 0 4px 14px rgba(23, 162, 245, 0.35)
     }
 
-    /* ═══════════════════════════════════════════════
-   ──────────── RESPONSIVE ────────────
-═══════════════════════════════════════════════ */
+    /* ══════════════════════════════════════════════
+       RESPONSIVE — CLEAN MOBILE-FIRST
+       
+       Root fix: hero-right needs an explicit height because
+       .hero-slide uses position:absolute;inset:0 and needs
+       a sized parent to fill. Without height on hero-right,
+       the slider collapses and images show at 0 size.
+    ══════════════════════════════════════════════ */
 
-    /* ── 1080px — tablet landscape ─── */
-    @media(max-width:1080px) {
-      :root {
-        --sec-y: 72px
+    /* BASE: Mobile (applies unless overridden) */
+
+    /* Stack all two-column layouts */
+    .hero,
+    .about-grid,
+    .why-grid,
+    .ba-grid,
+    .faq-grid,
+    .testi-sec {
+      display: flex !important;
+      flex-direction: column !important;
+      width: 100% !important;
+      gap: 0 !important;
+    }
+
+    .svc-body,
+    .book-grid {
+      display: flex !important;
+      flex-direction: column !important;
+      width: 100% !important;
+      gap: 28px !important;
+    }
+
+    /* Hero: text first, full-width image below */
+    .hero-left {
+      order: 1;
+      width: 100% !important;
+      padding: 36px 0 32px !important;
+    }
+
+    .hero-right {
+      order: 2;
+      width: 100% !important;
+      height: 300px !important;
+      /* ★ explicit height: slides are position:absolute */
+      min-height: 300px !important;
+      flex-shrink: 0;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .hero-slider {
+      position: relative !important;
+      width: 100% !important;
+      height: 100% !important;
+      min-height: 300px !important;
+    }
+
+    .hero-slide {
+      position: absolute !important;
+      inset: 0 !important;
+      background-size: cover !important;
+      background-position: center center !important;
+    }
+
+    /* Services */
+    .svc-head-row {
+      display: flex !important;
+      flex-direction: column !important;
+      gap: 16px !important;
+      margin-bottom: 28px !important;
+    }
+
+    .svc-head-right {
+      align-items: flex-start !important;
+    }
+
+    .svc-tiles {
+      display: grid !important;
+      grid-template-columns: 1fr !important;
+      gap: 10px !important;
+    }
+
+    .svc-photo {
+      aspect-ratio: 16/7;
+    }
+
+    /* About mini */
+    .about-mini {
+      display: flex !important;
+      flex-direction: column !important;
+      gap: 12px !important;
+    }
+
+    /* Why overlay badge */
+    .why-photos {
+      padding-bottom: 80px;
+    }
+
+    .why-inset {
+      width: 52%;
+      right: -6px;
+    }
+
+    .why-badge {
+      bottom: 46px;
+      left: 50%;
+      transform: translateX(-50%);
+      font-size: 0.8rem;
+      padding: 10px 14px;
+    }
+
+    /* Team: 2-col on mobile */
+    .team-grid {
+      display: grid !important;
+      grid-template-columns: repeat(2, 1fr) !important;
+      gap: 14px !important;
+    }
+
+    /* FAQ image hidden on mobile */
+    .faq-right {
+      display: none;
+    }
+
+    /* Footer: 2-col grid */
+    .footer-grid {
+      display: grid !important;
+      grid-template-columns: 1fr 1fr !important;
+      gap: 28px !important;
+      margin-bottom: 28px !important;
+    }
+
+    .footer-bottom {
+      flex-direction: column !important;
+      text-align: center;
+    }
+
+    .footer-desc {
+      max-width: 100%;
+    }
+
+    /* Testimonial: stacked */
+    .testi-content {
+      padding: 36px 20px;
+    }
+
+    .testi-photo {
+      min-height: 260px;
+    }
+
+    /* Booking form: single column */
+    .bf-grid-3 {
+      display: flex !important;
+      flex-direction: column !important;
+      gap: 10px !important;
+    }
+
+    /* Hero pills */
+    .hero-pills {
+      flex-wrap: wrap !important;
+      gap: 8px !important;
+      margin: 16px 0 !important;
+    }
+
+    /* Exp badge */
+    .exp-badge {
+      left: -8px;
+    }
+
+    /* Nav toggles */
+    .nav,
+    .hdr-cta,
+    .hdr-phone {
+      display: none !important;
+    }
+
+    .burger {
+      display: flex !important;
+    }
+
+    .mob-cta-strip {
+      display: flex !important;
+    }
+
+    body {
+      padding-bottom: 72px;
+    }
+
+    .wa-float {
+      bottom: 84px !important;
+      right: 20px !important;
+    }
+
+    .top-btn {
+      bottom: 84px !important;
+      right: 80px !important;
+    }
+
+    /* Padding */
+    .W {
+      padding: 0 16px !important;
+      max-width: 100% !important;
+    }
+
+    /* ── 480px+ ───────────────────────────────── */
+    @media (min-width: 480px) {
+      .hero-right {
+        height: 340px !important;
+        min-height: 340px !important;
       }
 
-      /* Hero: stack image on top, text below */
-      .hero {
-        grid-template-columns: 1fr;
-        grid-template-rows: auto auto;
-        min-height: auto;
+      .hero-slider {
+        min-height: 340px !important;
+      }
+
+      .svc-tiles {
+        grid-template-columns: repeat(2, 1fr) !important;
       }
 
       .hero-left {
-        order: 2;
-        padding: 48px 0 56px;
+        padding: 40px 0 36px !important;
+      }
+    }
+
+    /* ── 640px+ ───────────────────────────────── */
+    @media (min-width: 640px) {
+      .hero-right {
+        height: 400px !important;
+        min-height: 400px !important;
       }
 
-      .hero-left::after {
-        display: none
+      .hero-slider {
+        min-height: 400px !important;
       }
 
-      .hero-left .W-hero {
-        padding: 0
+      .about-mini {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important;
+        gap: 14px !important;
+      }
+
+      .book-grid {
+        display: grid !important;
+        grid-template-columns: 220px 1fr !important;
+        gap: 28px !important;
+        align-items: start !important;
+      }
+
+      .bf-grid-3 {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important;
+        gap: 10px !important;
+      }
+    }
+
+    /* ── 768px+ (tablet portrait) ──────────────── */
+    @media (min-width: 768px) {
+      :root {
+        --sec-y: var(--sec-y-m);
       }
 
       .hero-right {
-        order: 1;
-        min-height: 360px
+        height: 460px !important;
+        min-height: 460px !important;
       }
 
-      .hero-right img {
-        height: 360px;
-        width: 100%
+      .hero-slider {
+        min-height: 460px !important;
       }
 
-      .hero-dots {
-        display: none
+      .svc-tiles {
+        grid-template-columns: repeat(3, 1fr) !important;
       }
 
-      /* Services */
       .svc-head-row {
-        grid-template-columns: 1fr;
-        gap: 20px
+        display: grid !important;
+        grid-template-columns: 1fr auto !important;
+        align-items: flex-start !important;
+        gap: 24px !important;
       }
 
       .svc-head-right {
-        align-items: flex-start
+        align-items: flex-end !important;
       }
 
+      .book-grid {
+        display: grid !important;
+        grid-template-columns: 260px 1fr !important;
+        gap: 36px !important;
+        align-items: start !important;
+      }
+
+      .bf-grid-3 {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr 1fr !important;
+        gap: 12px !important;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr 1fr !important;
+        gap: 32px !important;
+      }
+
+      .team-grid {
+        grid-template-columns: repeat(2, 1fr) !important;
+        gap: 18px !important;
+      }
+
+      .testi-content {
+        padding: 44px 36px;
+      }
+
+      .testi-photo {
+        min-height: 360px;
+      }
+
+      .about-grid,
+      .ba-grid {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important;
+        gap: 48px !important;
+        align-items: center !important;
+      }
+
+      .exp-badge {
+        left: -16px;
+      }
+
+      .W {
+        padding: 0 24px !important;
+      }
+    }
+
+    /* ── 1024px+ (desktop) ───────────────────── */
+    @media (min-width: 1024px) {
+      :root {
+        --sec-y: 90px;
+      }
+
+      /* Reset body bottom padding */
+      body {
+        padding-bottom: 0;
+      }
+
+      /* Restore desktop nav */
+      .nav {
+        display: flex !important;
+      }
+
+      .hdr-cta {
+        display: inline-flex !important;
+      }
+
+      .hdr-phone {
+        display: flex !important;
+      }
+
+      .burger {
+        display: none !important;
+      }
+
+      .mob-cta-strip {
+        display: none !important;
+      }
+
+      .wa-float {
+        bottom: 24px !important;
+        right: 24px !important;
+      }
+
+      .top-btn {
+        bottom: 24px !important;
+        right: 84px !important;
+      }
+
+      /* Hero: side-by-side */
+      .hero {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important;
+        min-height: 88vh !important;
+        gap: 0 !important;
+        flex-direction: unset !important;
+      }
+
+      .hero-left {
+        order: unset !important;
+        padding: 64px 56px 64px 0 !important;
+      }
+
+      .hero-right {
+        order: unset !important;
+        height: auto !important;
+        min-height: unset !important;
+      }
+
+      .hero-slider {
+        height: 100% !important;
+        min-height: unset !important;
+      }
+
+      .hero-slide {
+        background-position: 55% center !important;
+      }
+
+      /* Two-column sections */
+      .about-grid,
+      .why-grid,
+      .faq-grid {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important;
+        gap: 72px !important;
+        align-items: center !important;
+        flex-direction: unset !important;
+      }
+
+      .ba-grid {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important;
+        gap: 72px !important;
+        align-items: center !important;
+      }
+
+      /* Services */
       .svc-body {
-        grid-template-columns: 1fr;
-        gap: 24px
+        display: grid !important;
+        grid-template-columns: 1fr 360px !important;
+        gap: 28px !important;
+        align-items: start !important;
+        flex-direction: unset !important;
       }
 
       .svc-photo {
-        aspect-ratio: 16/7;
-        order: -1
-      }
-
-      /* About */
-      .about-grid {
-        grid-template-columns: 1fr;
-        gap: 48px
-      }
-
-      .about-photo-wrap {
-        max-width: 400px;
-        margin: 0 auto
-      }
-
-      /* Why */
-      .why-grid {
-        grid-template-columns: 1fr;
-        gap: 52px
-      }
-
-      .why-photos {
-        max-width: 460px;
-        margin: 0 auto
-      }
-
-      /* Before/After */
-      .ba-grid {
-        grid-template-columns: 1fr;
-        gap: 40px
+        aspect-ratio: 2/3;
       }
 
       /* Booking */
       .book-grid {
-        grid-template-columns: 1fr;
-        gap: 36px
+        display: grid !important;
+        grid-template-columns: 300px 1fr !important;
+        gap: 48px !important;
+        align-items: start !important;
+        flex-direction: unset !important;
       }
 
-      /* Team */
+      /* Team: 4-col */
       .team-grid {
-        grid-template-columns: repeat(2, 1fr)
+        display: grid !important;
+        grid-template-columns: repeat(4, 1fr) !important;
+        gap: 22px !important;
       }
 
-      /* Testimonial */
+      /* Testimonial: side-by-side */
       .testi-sec {
-        grid-template-columns: 1fr
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important;
+        flex-direction: unset !important;
       }
 
       .testi-photo {
-        min-height: 320px
+        min-height: 480px;
       }
 
-      /* FAQ */
-      .faq-grid {
-        grid-template-columns: 1fr;
-        gap: 40px
-      }
-
-      .faq-right {
-        display: none
-      }
-
-      /* hide image on tablet to save space */
-
-      /* Footer */
-      .footer-grid {
-        grid-template-columns: 1fr 1fr;
-        gap: 36px
-      }
-    }
-
-    /* ── 768px — tablet portrait / large phone ─── */
-    @media(max-width:768px) {
-      :root {
-        --sec-y: var(--sec-y-m)
-      }
-
-      /* Hide desktop nav, show burger */
-      .nav,
-      .hdr-phone,
-      .hdr-cta {
-        display: none
-      }
-
-      .burger {
-        display: flex
-      }
-
-      /* Show mobile sticky CTA strip */
-      .mob-cta-strip {
-        display: flex
-      }
-
-      /* Add padding to body bottom so content isn't hidden by sticky strip */
-      body {
-        padding-bottom: 72px
-      }
-
-      /* Services tiles: 2 col */
-      .svc-tiles {
-        grid-template-columns: 1fr 1fr
-      }
-
-      /* Booking form: all single col */
-      .bf-grid-3 {
-        grid-template-columns: 1fr
-      }
-
-      .bf-grid-3+.bf-grid-3 {
-        margin-top: 0
-      }
-
-      /* Team: 2 col */
-      .team-grid {
-        grid-template-columns: 1fr 1fr
-      }
-
-      /* Testimonial full width stack */
       .testi-content {
-        padding: 44px 24px
+        padding: 60px 48px;
       }
 
-      /* Footer: 2 col */
+      /* FAQ image restored */
+      .faq-right {
+        display: block;
+      }
+
+      /* Footer: 4-col */
       .footer-grid {
-        grid-template-columns: 1fr 1fr
+        display: grid !important;
+        grid-template-columns: 2fr 1fr 1fr 1fr !important;
+        gap: 44px !important;
+        margin-bottom: 44px !important;
       }
 
       .footer-bottom {
-        flex-direction: column;
-        text-align: center
-      }
-
-      /* About mini grid — keep side by side until 480 */
-      .exp-badge {
-        left: -12px
-      }
-
-      /* Floating buttons shift up to avoid sticky strip */
-      .wa-float {
-        bottom: 84px
-      }
-
-      .top-btn {
-        bottom: 84px;
-        right: 80px
-      }
-    }
-
-    /* ── 480px — most phones ─── */
-    @media(max-width:480px) {
-      :root {
-        --sec-y: var(--sec-y-s)
-      }
-
-      .W {
-        padding: 0 16px
-      }
-
-      /* Hero */
-      .hero-right {
-        min-height: 260px
-      }
-
-      .hero-right::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        bottom: 0;
-        width: 180px;
-        background: linear-gradient(to right, #ffffff 0%, rgba(255, 255, 255, 0) 100%);
-        z-index: 2;
-        pointer-events: none;
-      }
-
-      .hero-right img {
-        height: 260px
-      }
-
-      h1 {
-        font-size: clamp(1.7rem, 6.5vw, 2.4rem) !important
-      }
-
-      .hero h1 {
-        font-size: clamp(1.7rem, 6.5vw, 2.4rem)
-      }
-
-      .hero-pills {
-        flex-direction: column;
-        gap: 8px
-      }
-
-      .h-pill {
-        width: 100%
-      }
-
-      /* Services */
-      .svc-tiles {
-        grid-template-columns: 1fr
-      }
-
-      /* About */
-      .about-mini {
-        grid-template-columns: 1fr;
-        gap: 12px
-      }
-
-      .about-img-frame {
-        width: 100%
-      }
-
-      /* Why */
-      .why-photos {
-        padding-bottom: 80px
-      }
-
-      .why-inset {
-        width: 52%;
-        right: -6px
-      }
-
-      .why-badge {
-        bottom: 46px;
-        left: 50%;
-        transform: translateX(-50%);
-        font-size: 0.8rem;
-        padding: 10px 14px
-      }
-
-      /* Team */
-      .team-grid {
-        grid-template-columns: 1fr 1fr
-      }
-
-      /* Section headings */
-      h2.sh,
-      h2.sh-w {
-        font-size: clamp(1.5rem, 5.5vw, 2rem)
-      }
-
-      /* Footer */
-      .footer-grid {
-        grid-template-columns: 1fr
+        flex-direction: row !important;
+        text-align: left;
       }
 
       .footer-desc {
-        max-width: 100%
+        max-width: 270px;
       }
 
-      /* Book form */
-      .book-card {
-        padding: 22px 18px
+      /* About fine-tune */
+      .about-mini {
+        display: grid !important;
+        grid-template-columns: 1fr 1fr !important;
+        gap: 14px !important;
       }
 
-      .book-form-wrap {
-        padding-top: 8px
-      }
-    }
-
-    /* ── 360px — very small phones ─── */
-    @media(max-width:360px) {
-      .hero h1 {
-        font-size: 1.6rem
+      .exp-badge {
+        left: -24px;
       }
 
-      .svc-tile h4 {
-        font-size: 0.78rem
+      .why-photos {
+        padding-bottom: 100px;
       }
 
-      .team-grid {
-        grid-template-columns: 1fr
+      .why-inset {
+        width: 55%;
+        right: 0;
       }
 
-      .btn-pill {
-        padding: 12px 20px;
-        font-size: 0.8rem
+      .why-badge {
+        bottom: 60px;
+        left: 52%;
+        transform: translateX(-50%);
+        font-size: inherit;
+        padding: 12px 18px;
       }
 
-      h2.sh,
-      h2.sh-w {
-        font-size: 1.45rem
-      }
-
-      .testi-content {
-        padding: 32px 18px
-      }
-
-      .mob-cta-strip {
-        flex-direction: column;
-        gap: 8px
+      .W {
+        padding: 0 24px !important;
+        max-width: 1240px !important;
+        margin: 0 auto !important;
       }
     }
 
-    /* ─── HERO SLIDER ──────────────────────────── */
-    .hero-slider {
-      position: relative;
-      width: 100%;
-      height: 100%;
-      overflow: hidden;
-      background: var(--sky-lt2);
-    }
-
-    /* Each slide sits stacked, only active one shows */
-    .hero-slide {
-      position: absolute;
-      inset: 0;
-      opacity: 0;
-      transition: opacity 0.9s ease;
-      pointer-events: none;
-      overflow: hidden;
-      background-size: cover;
-      background-position: 55% center;
-      /* pan starts from right */
-    }
-
-    .hero-slide.active {
-      opacity: 1;
-      pointer-events: auto;
-      z-index: 1;
-      animation: hero-pan 6s linear forwards;
-    }
-
-    @keyframes hero-pan {
-      0% {
-        background-position: right center;
-      }
-
-      100% {
-        background-position: left center;
+    /* ── 1280px+ ───────────────────────────────── */
+    @media (min-width: 1280px) {
+      .hero {
+        grid-template-columns: 1fr 1fr;
       }
     }
 
-    /* The image inside pans from right→left while visible.
-   object-position starts at right and drifts to left over 6s.
-   Works whether the image is wider OR same width as container. */
-    .hero-slide img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      display: block;
-      transform-origin: right center;
-      animation: none;
-      /* set by JS when slide becomes active */
-    }
-
-    .hero-slide.active img {
-      animation: hero-pan 15s linear forwards;
-    }
-
-    @keyframes hero-pan {
-      0% {
-        object-position: right center;
-        transform: scale(1.08)
+    /* ── 1440px+ ───────────────────────────────── */
+    @media (min-width: 1440px) {
+      .hero {
+        grid-template-columns: 1.1fr 0.9fr;
       }
-
-      100% {
-        object-position: left center;
-        transform: scale(1.0)
-      }
-    }
-
-    /* Dot indicators */
-    .hero-slider-dots {
-      position: absolute;
-      bottom: 18px;
-      left: 50%;
-      transform: translateX(-50%);
-      display: flex;
-      gap: 8px;
-      z-index: 2;
-    }
-
-    .hsd {
-      width: 8px;
-      height: 8px;
-      border-radius: 50%;
-      background: rgba(255, 255, 255, 0.4);
-      cursor: pointer;
-      transition: all 0.3s;
-      border: none;
-      padding: 0;
-    }
-
-    .hsd.on {
-      background: #fff;
-      width: 24px;
-      border-radius: 4px
-    }
-
-    /* Fallback placeholder */
-    .hero-slider .img-ph {
-      width: 100%;
-      height: 100%;
-      min-height: 400px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 6rem;
-    }
-
-    .hs-arr {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      z-index: 3;
-      width: 44px;
-      height: 44px;
-      border-radius: 50%;
-      border: none;
-      cursor: pointer;
-      background: rgba(255, 255, 255, 0.85);
-      color: var(--navy);
-      font-size: 1.6rem;
-      line-height: 1;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
-      transition: all 0.2s;
-    }
-
-    .hs-arr:hover {
-      background: #fff;
-      box-shadow: 0 4px 18px rgba(0, 0, 0, 0.2);
-      transform: translateY(-50%) scale(1.08)
-    }
-
-    .hs-prev {
-      left: 14px
-    }
-
-    .hs-next {
-      right: 14px
     }
   </style>
 </head>
 
 <body>
 
-  <!-- ══════════════════════════════════════════════
-   HEADER
-══════════════════════════════════════════════ -->
   <header class="hdr" id="hdr">
     <div class="W">
       <div class="hdr-wrap">
-
-        <!-- LOGO — replace src="" with your logo file path -->
         <a href="#" class="logo">
           <img src="./images/favicon.png" alt="32 Diamonds Dental Clinic Logo" class="logo-img"
             onerror="this.style.display='none';document.getElementById('logoFallback').style.display='flex'">
-          <!-- Fallback shown when logo src is empty -->
           <div class="logo-fallback" id="logoFallback">
-
             <div class="logo-text-box">
-              <strong>32 Diamonds Dental Clinic</strong>
+              <strong>32 Diamonds</strong>
               <span>Creating Smiles since 2008</span>
             </div>
           </div>
         </a>
-
-        <!-- Desktop Navigation -->
         <nav class="nav">
           <a href="#hero" class="active">HOME</a>
           <a href="#services">SERVICES</a>
@@ -2703,8 +2795,6 @@
           <a href="#faq">FAQ</a>
           <a href="#booking">CONTACT</a>
         </nav>
-
-        <!-- Right: phone + CTA + burger -->
         <div class="hdr-right">
           <div class="hdr-phone">
             <div class="hdr-phone-icon">
@@ -2719,13 +2809,10 @@
             </div>
           </div>
           <a href="#booking" class="hdr-cta">Book @ ₹200</a>
-          <button class="burger" id="burgerBtn" aria-label="Toggle navigation">
-            <span></span><span></span><span></span>
-          </button>
+          <button class="burger" id="burgerBtn"
+            aria-label="Toggle navigation"><span></span><span></span><span></span></button>
         </div>
       </div>
-
-      <!-- Mobile Nav Drawer -->
       <nav class="mob-nav" id="mobNav">
         <a href="#hero">Home</a>
         <a href="#services">Services</a>
@@ -2737,32 +2824,29 @@
       </nav>
     </div>
   </header>
-  <!-- ══════════════════════════════════════════════
-   MARQUEE
-══════════════════════════════════════════════ -->
+
   <div class="marquee">
     <div class="marquee-track" aria-hidden="true">
       <div class="mq-item">
-        <div class="mq-avatar"><img src="" alt="" onerror="this.parentElement.textContent='★'"></div>
-        Get 16% Off Doctor Appointment
+        <div class="mq-avatar"><img src="" alt="" onerror="this.parentElement.textContent='★'"></div>Get 16% Off Doctor
+        Appointment
       </div>
       <div class="mq-item">🦷</div>
       <div class="mq-item">
-        <div class="mq-avatar"><img src="" alt="" onerror="this.parentElement.textContent='★'"></div>
-        Limited Time Offer! Hurry Up
+        <div class="mq-avatar"><img src="" alt="" onerror="this.parentElement.textContent='★'"></div>Limited Time Offer!
+        Hurry Up
       </div>
       <div class="mq-item">🦷</div>
       <div class="mq-item">
-        <div class="mq-avatar"><img src="" alt="" onerror="this.parentElement.textContent='★'"></div>
-        Consultation @ ₹200 Only
+        <div class="mq-avatar"><img src="" alt="" onerror="this.parentElement.textContent='★'"></div>Consultation @ ₹200
+        Only
       </div>
       <div class="mq-item">🦷</div>
       <div class="mq-item">
-        <div class="mq-avatar"><img src="" alt="" onerror="this.parentElement.textContent='★'"></div>
-        Crowns Ready in 24–48 Hours
+        <div class="mq-avatar"><img src="" alt="" onerror="this.parentElement.textContent='★'"></div>Crowns Ready in
+        24–48 Hours
       </div>
       <div class="mq-item">🦷</div>
-      <!-- Duplicate for seamless loop -->
       <div class="mq-item">
         <div class="mq-avatar">★</div>Get 16% Off Doctor Appointment
       </div>
@@ -2782,63 +2866,38 @@
     </div>
   </div>
 
-  <!-- ══════════════════════════════════════════════
-   HERO
-══════════════════════════════════════════════ -->
   <section class="hero" id="hero">
-    <!-- Left: Content -->
     <div class="hero-left">
       <div class="W">
         <span class="hero-tag rv">WE CARE FOR YOUR SMILE</span>
-        <h1 class="rv d1">
-          Transforming Your<br>
-          <span class="smile-word">Smile</span> With<br>
-          Excellence
-        </h1>
+        <h1 class="rv d1">Transforming Your<br><span class="smile-word">Smile</span> With<br>Excellence</h1>
         <div class="hero-pills rv d2">
           <div class="h-pill">
-            <div class="h-pill-icon">🦷</div>
-            <span>Advanced Root Canal Treatment</span>
+            <div class="h-pill-icon">🦷</div><span>Advanced Root Canal Treatment</span>
           </div>
           <div class="h-pill">
-            <div class="h-pill-icon">✨</div>
-            <span>Modern Cosmetic Dentistry</span>
+            <div class="h-pill-icon">✨</div><span>Modern Cosmetic Dentistry</span>
           </div>
         </div>
-        <p class="hero-desc rv d3">
-          Focused on preventive care and overall dental wellness. At 32 Diamonds, every treatment is performed under
-          Rubber Dam &amp; Magnification — the global gold standard for precision dentistry.
-        </p>
-        <a href="#booking" class="btn btn-pill rv d4">
-          TAKE OUR SERVICE
-          <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" viewBox="0 0 16 16">
+        <p class="hero-desc rv d3">Focused on preventive care and overall dental wellness. At 32 Diamonds, every
+          treatment is performed under Rubber Dam &amp; Magnification — the global gold standard for precision
+          dentistry.</p>
+        <a href="#booking" class="btn btn-pill rv d4">TAKE OUR SERVICE <svg xmlns="http://www.w3.org/2000/svg"
+            width="17" height="17" fill="currentColor" viewBox="0 0 16 16">
             <path
               d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
-          </svg>
-        </a>
+          </svg></a>
         <div class="hero-dots">
-          <span></span><span></span><span></span><span></span><span></span>
-          <span></span><span></span><span></span><span></span><span></span>
-          <span></span><span></span><span></span><span></span><span></span>
-          <span></span><span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
         </div>
       </div>
     </div>
-    <!-- Right: Image Slider
-       ─────────────────────────────────────────────
-       ADD YOUR IMAGES: put file paths in data-src.
-       Add or remove <div class="hero-slide"> blocks freely.
-       The slider auto-advances every 5s and pans each
-       image right→left (Ken Burns) while it's active.
-       ───────────────────────────────────────────── -->
     <div class="hero-right">
       <div class="hero-slider" id="heroSlider">
-
         <div class="hero-slide active" style="background-image:url('./images/hero_dentist.png')"></div>
         <div class="hero-slide" style="background-image:url('./images/services_smile.png')"></div>
         <div class="hero-slide" style="background-image:url('./images/why_clinic.png')"></div>
         <div class="hero-slide" style="background-image:url('./images/why_clinic.png')"></div>
-
         <div class="hero-slider-dots" id="heroSliderDots"></div>
         <button class="hs-arr hs-prev" onclick="hsPrev()" aria-label="Previous">&#8249;</button>
         <button class="hs-arr hs-next" onclick="hsNext()" aria-label="Next">&#8250;</button>
@@ -2846,13 +2905,8 @@
     </div>
   </section>
 
-
-  <!-- ══════════════════════════════════════════════
-   SERVICES
-══════════════════════════════════════════════ -->
   <section class="svc-sec" id="services">
     <div class="W">
-      <!-- Header row -->
       <div class="svc-head-row">
         <div>
           <span class="eyebrow rv">PROVIDING DENTAL SERVICES</span>
@@ -2867,22 +2921,17 @@
               <div class="r-av"><img src="" alt="" onerror="this.parentElement.textContent='B'"></div>
               <div class="r-av"><img src="" alt="" onerror="this.parentElement.textContent='C'"></div>
             </div>
-            <div class="r-info">
-              <strong>4.8 Ratings</strong>
+            <div class="r-info"><strong>4.8 Ratings</strong>
               <div class="r-stars">★★★★★</div>
             </div>
           </div>
-          <a href="#" class="btn btn-pill">
-            SEE ALL SERVICES
-            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" viewBox="0 0 16 16">
+          <a href="#" class="btn btn-pill">SEE ALL SERVICES <svg xmlns="http://www.w3.org/2000/svg" width="17"
+              height="17" fill="currentColor" viewBox="0 0 16 16">
               <path
                 d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
-            </svg>
-          </a>
+            </svg></a>
         </div>
       </div>
-
-      <!-- Tiles + Photo -->
       <div class="svc-body">
         <div class="svc-tiles">
           <div class="svc-tile rv">
@@ -2933,8 +2982,7 @@
             <h4>Straighten Teeth Solution</h4>
           </div>
         </div>
-        <div class="svc-photo rv d2">
-          <img src="./images/services_smile.png" alt="Patient receiving dental treatment"
+        <div class="svc-photo rv d2"><img src="./images/services_smile.png" alt="Patient receiving dental treatment"
             onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
           <div class="img-ph" style="display:none">😊</div>
         </div>
@@ -2942,35 +2990,24 @@
     </div>
   </section>
 
-  <!-- ══════════════════════════════════════════════
-   ABOUT
-══════════════════════════════════════════════ -->
   <section class="about-sec sec-white" id="about">
     <div class="W">
       <div class="about-grid">
-        <!-- Photo -->
         <div class="about-photo-wrap rv">
           <div class="about-circle"></div>
           <div class="about-dots-deco">
-            <span></span><span></span><span></span><span></span><span></span>
-            <span></span><span></span><span></span><span></span><span></span>
-            <span></span><span></span><span></span><span></span><span></span>
-            <span></span><span></span><span></span><span></span><span></span>
+            <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
           </div>
           <div class="about-img-frame">
-            <img src="./images/about_dentist.png" alt="Dr. Swwasti Jain — 32 Diamonds Dental Clinic"
+            <img src="./images/about_dentist.png" alt="Dr. Swwasti Jain"
               onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
             <div class="img-ph" style="display:none">👩‍⚕️</div>
             <div class="exp-badge">
               <div class="eb-icon">🦷</div>
-              <div>
-                <span class="eb-strong">17+ Years</span>
-                <span class="eb-small">Of Experiences</span>
-              </div>
+              <div><span class="eb-strong">17+ Years</span><span class="eb-small">Of Experiences</span></div>
             </div>
           </div>
         </div>
-        <!-- Content -->
         <div class="rv d1">
           <span class="eyebrow">SHORTLY KNOW ABOUT US</span>
           <h2 class="sh">Are You Looking For A Dentist To Give You Special Smile?</h2>
@@ -2978,8 +3015,7 @@
             bright. We offer a wide range of dental treatment and restoration services, gathered with focus on patient
             comfort and satisfaction.</p>
           <div class="about-mini">
-            <div class="about-mini-img">
-              <img src="./images/services_smile.png" alt="Dental treatment in progress"
+            <div class="about-mini-img"><img src="./images/services_smile.png" alt="Dental treatment"
                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
               <div class="img-ph" style="display:none">🦷</div>
             </div>
@@ -3011,15 +3047,12 @@
             </div>
           </div>
           <div class="trust-foot">
-            <a href="#booking" class="btn btn-pill">
-              CONTACT WITH US
-              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" viewBox="0 0 16 16">
+            <a href="#booking" class="btn btn-pill">CONTACT WITH US <svg xmlns="http://www.w3.org/2000/svg" width="17"
+                height="17" fill="currentColor" viewBox="0 0 16 16">
                 <path
                   d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
-              </svg>
-            </a>
-            <div class="tp-badge">
-              <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 256 256">
+              </svg></a>
+            <div class="tp-badge"><svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" viewBox="0 0 256 256">
                 <path fill="#00b67a" d="M0 0h256v256H0z" />
                 <path fill="#fff"
                   d="M128 173.5L83.5 192l16.3-49.7L56 112.5h53.6L128 64l18.4 48.5H200l-43.8 29.8 16.3 49.7z" />
@@ -3034,33 +3067,23 @@
     </div>
   </section>
 
-  <!-- ══════════════════════════════════════════════
-   WHY WE ARE BEST
-══════════════════════════════════════════════ -->
   <section class="why-sec">
     <div class="W">
       <div class="why-grid">
-        <!-- Photos -->
         <div class="why-photos rv">
-          <div class="why-main">
-            <img src="./images/why_clinic.png" alt="Our dental team at work"
+          <div class="why-main"><img src="./images/why_clinic.png" alt="Our dental team"
               onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
             <div class="img-ph" style="display:none">👨‍⚕️</div>
           </div>
-          <div class="why-inset">
-            <img src="./images/about_dentist.png" alt="Patient receiving treatment"
+          <div class="why-inset"><img src="./images/about_dentist.png" alt="Patient treatment"
               onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
             <div class="img-ph" style="display:none">🦷</div>
           </div>
           <div class="why-badge">
             <div class="wb-icon">🏆</div>
-            <div>
-              <span class="wb-strong">Best Awarded Clinic</span>
-              <span class="wb-small">Vaishali, NCR</span>
-            </div>
+            <div><span class="wb-strong">Best Awarded Clinic</span><span class="wb-small">Vaishali, NCR</span></div>
           </div>
         </div>
-        <!-- Content -->
         <div class="rv d1">
           <span class="eyebrow" style="color:rgba(255,255,255,0.65)">WHY WE ARE THE BEST FROM OTHERS</span>
           <h2 class="sh-w">Your Smile Matters Expert Dental Care A Bright Tomorrow</h2>
@@ -3103,57 +3126,44 @@
                 </svg></div>Dental Cleaning Treatment
             </div>
           </div>
-          <a href="#services" class="btn btn-pill">
-            SEE ALL SERVICES
-            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" viewBox="0 0 16 16">
+          <a href="#services" class="btn btn-pill">SEE ALL SERVICES <svg xmlns="http://www.w3.org/2000/svg" width="17"
+              height="17" fill="currentColor" viewBox="0 0 16 16">
               <path
                 d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
-            </svg>
-          </a>
+            </svg></a>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ══════════════════════════════════════════════
-   BEFORE / AFTER
-══════════════════════════════════════════════ -->
   <section class="ba-sec sec-white">
     <div class="W">
       <div class="ba-grid">
         <div class="rv">
           <div class="ba-container" id="baSlider">
-            <div class="ba-side ba-before">
-              <img src="./images/teeth_before.png" alt="Before dental treatment"
+            <div class="ba-side ba-before"><img src="./images/teeth_before.png" alt="Before"
                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
               <div class="img-ph" style="display:none;background:#fce8e8">😐 Before</div>
             </div>
-            <div class="ba-side ba-after" id="baAfter">
-              <img src="./images/teeth_after.png" alt="After dental treatment"
+            <div class="ba-side ba-after" id="baAfter"><img src="./images/teeth_after.png" alt="After"
                 onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
               <div class="img-ph" style="display:none;background:#e8f8ea">😁 After</div>
             </div>
             <div class="ba-handle" id="baHandle">
-              <div class="ba-btn">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="currentColor" viewBox="0 0 16 16">
+              <div class="ba-btn"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="12" fill="currentColor"
+                  viewBox="0 0 16 16">
                   <path d="M6.5 2.5a.5.5 0 0 0-1 0v10a.5.5 0 0 0 1 0zm4 0a.5.5 0 0 0-1 0v10a.5.5 0 0 0 1 0z" />
                   <path
                     d="m3.854 4.146-2.5 2.5a.5.5 0 0 0 0 .708l2.5 2.5a.5.5 0 1 0 .708-.708L2.707 7.5H5.5a.5.5 0 0 0 0-1H2.707l1.855-1.854a.5.5 0 1 0-.708-.708zm8.292 0a.5.5 0 1 1 .708.708L11.293 6.5h2.793a.5.5 0 0 1 0 1h-2.793l1.854 1.854a.5.5 0 0 1-.708.708l-2.5-2.5a.5.5 0 0 1 0-.708z" />
-                </svg>
-              </div>
+                </svg></div>
             </div>
-            <span class="ba-lbl b">BEFORE</span>
-            <span class="ba-lbl a">AFTER</span>
+            <span class="ba-lbl b">BEFORE</span><span class="ba-lbl a">AFTER</span>
           </div>
-          <div class="ba-cta">
-            <a href="#services" class="btn btn-pill">
-              TAKE OUR SERVICE
-              <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" viewBox="0 0 16 16">
+          <div class="ba-cta"><a href="#services" class="btn btn-pill">TAKE OUR SERVICE <svg
+                xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" viewBox="0 0 16 16">
                 <path
                   d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
-              </svg>
-            </a>
-          </div>
+              </svg></a></div>
         </div>
         <div class="rv d1">
           <span class="eyebrow">SEE THE TRANSFORMATION</span>
@@ -3188,13 +3198,9 @@
     </div>
   </section>
 
-  <!-- ══════════════════════════════════════════════
-   BOOKING
-══════════════════════════════════════════════ -->
   <section class="book-sec" id="booking">
     <div class="W">
       <div class="book-grid">
-        <!-- Info card -->
         <div class="book-card rv">
           <h3 class="book-card-title">We Always Take Care Of Your Smile &amp; Self Confident</h3>
           <div class="bc-row">
@@ -3221,7 +3227,6 @@
             <div><span class="bc-lbl">Our Address</span><span class="bc-val">Vaishali Sector-4, Ghaziabad</span></div>
           </div>
         </div>
-        <!-- Form -->
         <div class="book-form-wrap rv d1">
           <h2>Book an Appointment</h2>
           <p>Get your dental health back on track with us</p>
@@ -3231,8 +3236,7 @@
             <div class="bf-field"><input type="tel" placeholder="Phone" maxlength="10" id="bP"></div>
           </div>
           <div class="bf-grid-3" style="margin-top:12px">
-            <div class="bf-field">
-              <select id="bS">
+            <div class="bf-field"><select id="bS">
                 <option value="">Select Department</option>
                 <option>General Dentistry</option>
                 <option>Root Canal (RCT)</option>
@@ -3241,11 +3245,9 @@
                 <option>Orthodontics / Braces</option>
                 <option>Kids Dentistry</option>
                 <option>Zoom Whitening</option>
-              </select>
-            </div>
+              </select></div>
             <div class="bf-field"><input type="date" id="bD"></div>
-            <div class="bf-field">
-              <select id="bT">
+            <div class="bf-field"><select id="bT">
                 <option value="">Select Time</option>
                 <option>10:00 AM</option>
                 <option>11:00 AM</option>
@@ -3253,8 +3255,7 @@
                 <option>02:00 PM</option>
                 <option>04:00 PM</option>
                 <option>06:00 PM</option>
-              </select>
-            </div>
+              </select></div>
           </div>
           <button class="book-submit" onclick="doBook()">APPOINTMENT NOW</button>
         </div>
@@ -3262,9 +3263,6 @@
     </div>
   </section>
 
-  <!-- ══════════════════════════════════════════════
-   TEAM
-══════════════════════════════════════════════ -->
   <section class="team-sec" id="team">
     <div class="W">
       <div class="team-hdr">
@@ -3281,14 +3279,12 @@
               <div class="dr-soc">𝕏</div>
               <div class="dr-soc">in</div>
               <div class="dr-soc">◎</div>
-            </div>
-            <img src="./images/team_dentist.png" alt="Dr. Swwasti Jain"
+            </div><img src="./images/team_dentist.png" alt="Dr. Swwasti Jain"
               onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
             <div class="img-ph" style="display:none">👩‍⚕️</div>
           </div>
           <div class="dr-info">
-            <h3>Dr. Swwasti Jain</h3>
-            <span>BDS · Implantologist · RCT Specialist</span>
+            <h3>Dr. Swwasti Jain</h3><span>BDS · Implantologist · RCT Specialist</span>
           </div>
         </div>
         <div class="dr-card rv d1">
@@ -3298,14 +3294,12 @@
               <div class="dr-soc">𝕏</div>
               <div class="dr-soc">in</div>
               <div class="dr-soc">◎</div>
-            </div>
-            <img src="./images/team_dentist.png" alt="Dr. Sameena Raza"
+            </div><img src="./images/team_dentist.png" alt="Dr. Sameena Raza"
               onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
             <div class="img-ph" style="display:none">👩‍⚕️</div>
           </div>
           <div class="dr-info">
-            <h3>Dr. Sameena Raza</h3>
-            <span>BDS · Dental Assistant</span>
+            <h3>Dr. Sameena Raza</h3><span>BDS · Dental Assistant</span>
           </div>
         </div>
         <div class="dr-card rv d2">
@@ -3315,14 +3309,12 @@
               <div class="dr-soc">𝕏</div>
               <div class="dr-soc">in</div>
               <div class="dr-soc">◎</div>
-            </div>
-            <img src="./images/team_dentist.png" alt="Dr. Amit Kumar"
+            </div><img src="./images/team_dentist.png" alt="Dr. Amit Kumar"
               onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
             <div class="img-ph" style="display:none">👨‍⚕️</div>
           </div>
           <div class="dr-info">
-            <h3>Dr. Amit Kumar</h3>
-            <span>BDS, MDS · Orthodontist</span>
+            <h3>Dr. Amit Kumar</h3><span>BDS, MDS · Orthodontist</span>
           </div>
         </div>
         <div class="dr-card rv d3">
@@ -3332,56 +3324,40 @@
               <div class="dr-soc">𝕏</div>
               <div class="dr-soc">in</div>
               <div class="dr-soc">◎</div>
-            </div>
-            <img src="./images/team_dentist.png" alt="Dr. Suchitra Kaur"
+            </div><img src="./images/team_dentist.png" alt="Dr. Suchitra Kaur"
               onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
             <div class="img-ph" style="display:none">👩‍⚕️</div>
           </div>
           <div class="dr-info">
-            <h3>Dr. Suchitra Kaur</h3>
-            <span>BDS · Dental Assistant</span>
+            <h3>Dr. Suchitra Kaur</h3><span>BDS · Dental Assistant</span>
           </div>
         </div>
       </div>
-      <div class="team-cta rv">
-        <a href="#" class="btn btn-pill">
-          SEE ALL DOCTORS
-          <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" viewBox="0 0 16 16">
+      <div class="team-cta rv"><a href="#" class="btn btn-pill">SEE ALL DOCTORS <svg xmlns="http://www.w3.org/2000/svg"
+            width="17" height="17" fill="currentColor" viewBox="0 0 16 16">
             <path
               d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8" />
-          </svg>
-        </a>
-      </div>
+          </svg></a></div>
     </div>
   </section>
 
-  <!-- ══════════════════════════════════════════════
-   TESTIMONIAL
-══════════════════════════════════════════════ -->
   <section class="testi-sec">
-    <div class="testi-photo">
-      <img src="./images/hero_dentist.png" alt="Happy patient at 32 Diamonds Dental Clinic"
+    <div class="testi-photo"><img src="./images/hero_dentist.png" alt="Happy patient"
         onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
       <div class="img-ph" style="display:none;min-height:480px">😊</div>
     </div>
     <div class="testi-content">
       <div class="testi-deco-dots">
-        <span></span><span></span><span></span><span></span><span></span><span></span>
-        <span></span><span></span><span></span><span></span><span></span><span></span>
-        <span></span><span></span><span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span>
       </div>
       <h3 class="testi-title" id="tTitle">Great Experience! Highly Recommended!</h3>
       <p class="testi-quote" id="tQuote">Single sitting RCT — completely painless. Got my zirconia crown the next visit.
         Rates are nominal for such excellent treatment. They even served hot coffee while I waited. Genuinely good
         effort by the whole team.</p>
       <div class="testi-user">
-        <div class="testi-av">
-          <img src="" alt="" onerror="this.parentElement.textContent='😊'">
-        </div>
-        <div>
-          <span class="testi-name" id="tName">Harish Kumar</span>
-          <span class="testi-role" id="tRole">Patient · Vaishali, Ghaziabad</span>
-        </div>
+        <div class="testi-av"><img src="" alt="" onerror="this.parentElement.textContent='😊'"></div>
+        <div><span class="testi-name" id="tName">Harish Kumar</span><span class="testi-role" id="tRole">Patient ·
+            Vaishali, Ghaziabad</span></div>
       </div>
       <div class="testi-bottom">
         <div class="testi-stars">
@@ -3407,26 +3383,21 @@
           </svg>
         </div>
         <div class="testi-nav-btns">
-          <button class="nav-btn" onclick="prevT()" aria-label="Previous">
-            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" viewBox="0 0 16 16">
+          <button class="nav-btn" onclick="prevT()"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17"
+              fill="currentColor" viewBox="0 0 16 16">
               <path
                 d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0" />
-            </svg>
-          </button>
-          <button class="nav-btn" onclick="nextT()" aria-label="Next">
-            <svg xmlns="http://www.w3.org/2000/svg" width="17" height="17" fill="currentColor" viewBox="0 0 16 16">
+            </svg></button>
+          <button class="nav-btn" onclick="nextT()"><svg xmlns="http://www.w3.org/2000/svg" width="17" height="17"
+              fill="currentColor" viewBox="0 0 16 16">
               <path
                 d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708" />
-            </svg>
-          </button>
+            </svg></button>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ══════════════════════════════════════════════
-   FAQ
-══════════════════════════════════════════════ -->
   <section class="faq-sec" id="faq">
     <div class="W">
       <div class="faq-grid">
@@ -3434,52 +3405,38 @@
           <span class="eyebrow rv">FAQ'S</span>
           <h2 class="sh rv d1">Everything You Need To Know About Dental Care</h2>
           <div class="faq-list rv d2">
-            <div class="faq-item open">
-              <button class="faq-q">
-                Q1. How can I schedule an appointment?
-                <div class="faq-tog">−</div>
-              </button>
+            <div class="faq-item open"><button class="faq-q">Q1. How can I schedule an appointment?<div class="faq-tog">
+                  −</div></button>
               <div class="faq-body">
                 <div class="faq-body-in">Call us at +91-8076900264, WhatsApp, or fill the booking form above. Our team
                   confirms your slot within 2 hours (Mon–Sat, 10am–8pm). Consultation with Intraoral Camera is just
                   ₹200.</div>
               </div>
             </div>
-            <div class="faq-item">
-              <button class="faq-q">
-                Q2. Is root canal treatment really painful?
-                <div class="faq-tog">+</div>
-              </button>
+            <div class="faq-item"><button class="faq-q">Q2. Is root canal treatment really painful?<div class="faq-tog">
+                  +</div></button>
               <div class="faq-body">
                 <div class="faq-body-in">Not at 32 Diamonds. We perform all RCTs using Rotary files under local
-                  anaesthesia and dental microscope magnification. Single sitting, completely painless. The fear is
-                  always worse than the reality.</div>
+                  anaesthesia and dental microscope magnification. Single sitting, completely painless.</div>
               </div>
             </div>
-            <div class="faq-item">
-              <button class="faq-q">
-                Q3. Can I get an estimate quote for my treatment?
-                <div class="faq-tog">+</div>
-              </button>
+            <div class="faq-item"><button class="faq-q">Q3. Can I get an estimate quote for my treatment?<div
+                  class="faq-tog">+</div></button>
               <div class="faq-body">
                 <div class="faq-body-in">Absolutely. We explain all treatment options and their costs clearly before
                   starting. No treatment begins without your informed agreement. No hidden charges, no surprises.</div>
               </div>
             </div>
-            <div class="faq-item">
-              <button class="faq-q">
-                Q4. How can I know the payment method?
-                <div class="faq-tog">+</div>
-              </button>
+            <div class="faq-item"><button class="faq-q">Q4. How can I know the payment method?<div class="faq-tog">+
+                </div></button>
               <div class="faq-body">
                 <div class="faq-body-in">We accept cash, UPI (Google Pay, PhonePe, Paytm), credit and debit cards. For
-                  larger treatments, installment options can be discussed with our team during consultation.</div>
+                  larger treatments, installment options can be discussed during consultation.</div>
               </div>
             </div>
           </div>
         </div>
-        <div class="faq-right rv d1">
-          <img src="./images/why_clinic.png" alt="Patient at 32 Diamonds Dental Clinic"
+        <div class="faq-right rv d1"><img src="./images/why_clinic.png" alt="Patient at 32 Diamonds"
             onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
           <div class="img-ph" style="display:none;aspect-ratio:3/4">😊</div>
         </div>
@@ -3487,25 +3444,17 @@
     </div>
   </section>
 
-  <!-- ══════════════════════════════════════════════
-   FOOTER
-══════════════════════════════════════════════ -->
   <footer>
     <div class="W">
       <div class="footer-grid">
         <div>
-          <!-- Footer logo — same swappable img -->
           <img src="" alt="32 Diamonds Dental Clinic" class="footer-logo-img" onerror="this.style.display='none'">
           <span class="footer-name">32 Diamonds Dental Clinic</span>
           <span class="footer-tag">Creating Smiles Since 2008</span>
           <p class="footer-desc">Vaishali's most trusted dental clinic. Painless treatments, advanced technology,
             genuine warranties — all under one roof.</p>
-          <div class="footer-socials">
-            <a href="#" class="fsoc">f</a>
-            <a href="#" class="fsoc">𝕏</a>
-            <a href="#" class="fsoc">in</a>
-            <a href="https://wa.me/918076900264" target="_blank" class="fsoc">💬</a>
-          </div>
+          <div class="footer-socials"><a href="#" class="fsoc">f</a><a href="#" class="fsoc">𝕏</a><a href="#"
+              class="fsoc">in</a><a href="https://wa.me/918076900264" target="_blank" class="fsoc">💬</a></div>
         </div>
         <div class="footer-col">
           <h4>Treatments</h4>
@@ -3548,92 +3497,74 @@
     </div>
   </footer>
 
-  <!-- ══════════════════════════════════════════════
-   MOBILE STICKY CTA BAR
-══════════════════════════════════════════════ -->
   <div class="mob-cta-strip">
-    <a href="tel:+918076900264" class="mob-cta-call">
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+    <a href="tel:+918076900264" class="mob-cta-call"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+        fill="currentColor" viewBox="0 0 16 16">
         <path
           d="M3.654 1.328a.678.678 0 0 0-1.015-.063L1.605 2.3c-.483.484-.661 1.169-.45 1.77a17.6 17.6 0 0 0 4.168 6.608 17.6 17.6 0 0 0 6.608 4.168c.601.211 1.286.033 1.77-.45l1.034-1.034a.678.678 0 0 0-.063-1.015l-2.307-1.794a.68.68 0 0 0-.58-.122l-2.19.547a1.75 1.75 0 0 1-1.657-.459L5.482 8.062a1.75 1.75 0 0 1-.46-1.657l.548-2.19a.68.68 0 0 0-.122-.58z" />
-      </svg>
-      Call Now
-    </a>
-    <a href="#booking" class="mob-cta-book">
-      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+      </svg>Call Now</a>
+    <a href="#booking" class="mob-cta-book"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+        fill="currentColor" viewBox="0 0 16 16">
         <path
           d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5M1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4z" />
-      </svg>
-      Book Appointment @ ₹200
-    </a>
+      </svg>Book Appointment @ ₹200</a>
   </div>
 
-  <!-- WhatsApp -->
-  <a href="https://wa.me/918076900264" target="_blank" class="wa-float" aria-label="WhatsApp">
-    <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" viewBox="0 0 16 16">
+  <a href="https://wa.me/918076900264" target="_blank" class="wa-float" aria-label="WhatsApp"><svg
+      xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" viewBox="0 0 16 16">
       <path
         d="M13.601 2.326A7.85 7.85 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.9 7.9 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.9 7.9 0 0 0 13.6 2.326zM7.994 14.521a6.6 6.6 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.56 6.56 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592z" />
-    </svg>
-  </a>
-  <!-- Scroll top -->
-  <button class="top-btn" id="topBtn" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top">
-    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
+    </svg></a>
+  <button class="top-btn" id="topBtn" onclick="window.scrollTo({top:0,behavior:'smooth'})" aria-label="Back to top"><svg
+      xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
       <path
         d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5" />
-    </svg>
-  </button>
+    </svg></button>
 
   <script>
-    /* ── BURGER ─────────────────────────────── */
+    /* ── BURGER ── */
     const burgerBtn = document.getElementById('burgerBtn');
     const mobNav = document.getElementById('mobNav');
     burgerBtn.addEventListener('click', () => {
       const open = mobNav.classList.toggle('open');
       burgerBtn.classList.toggle('open', open);
     });
-    // Close nav when a link is clicked
     mobNav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
-      mobNav.classList.remove('open');
-      burgerBtn.classList.remove('open');
+      mobNav.classList.remove('open'); burgerBtn.classList.remove('open');
     }));
 
-    /* ── SCROLL REVEAL ──────────────────────── */
+    /* ── SCROLL REVEAL ── */
     const rvObs = new IntersectionObserver(entries => {
       entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); rvObs.unobserve(e.target); } });
     }, { threshold: 0.1, rootMargin: '0px 0px -32px 0px' });
     document.querySelectorAll('.rv').forEach(el => rvObs.observe(el));
 
-    /* ── SCROLL TOP BUTTON ──────────────────── */
+    /* ── SCROLL TOP ── */
     window.addEventListener('scroll', () => {
       document.getElementById('topBtn').classList.toggle('show', window.scrollY > 400);
     }, { passive: true });
 
-    /* ── ACTIVE NAV ─────────────────────────── */
+    /* ── ACTIVE NAV ── */
     window.addEventListener('scroll', () => {
       let cur = '';
-      document.querySelectorAll('section[id]').forEach(s => {
-        if (s.offsetTop - 180 <= window.scrollY) cur = s.id;
-      });
+      document.querySelectorAll('section[id]').forEach(s => { if (s.offsetTop - 180 <= window.scrollY) cur = s.id; });
       document.querySelectorAll('.nav a').forEach(a => {
         a.classList.remove('active');
         if (cur && a.getAttribute('href') === '#' + cur) a.classList.add('active');
       });
     }, { passive: true });
 
-    /* ── FAQ ACCORDION ──────────────────────── */
+    /* ── FAQ ACCORDION ── */
     document.querySelectorAll('.faq-q').forEach(btn => {
       btn.addEventListener('click', function () {
         const item = this.closest('.faq-item');
         const isOpen = item.classList.contains('open');
-        document.querySelectorAll('.faq-item').forEach(i => {
-          i.classList.remove('open');
-          i.querySelector('.faq-tog').textContent = '+';
-        });
+        document.querySelectorAll('.faq-item').forEach(i => { i.classList.remove('open'); i.querySelector('.faq-tog').textContent = '+'; });
         if (!isOpen) { item.classList.add('open'); item.querySelector('.faq-tog').textContent = '−'; }
       });
     });
 
-    /* ── BEFORE / AFTER SLIDER ──────────────── */
+    /* ── BEFORE / AFTER SLIDER ── */
     (function () {
       const slider = document.getElementById('baSlider');
       const after = document.getElementById('baAfter');
@@ -3646,33 +3577,19 @@
         after.style.clipPath = `inset(0 ${100 - p}% 0 0)`;
         handle.style.left = p + '%';
       }
-      // Mouse
       handle.addEventListener('mousedown', e => { dragging = true; e.preventDefault() });
       window.addEventListener('mousemove', e => { if (dragging) setPos(e.clientX) });
       window.addEventListener('mouseup', () => dragging = false);
-      // Touch
-      handle.addEventListener('touchstart', e => { dragging = true }, { passive: true });
+      handle.addEventListener('touchstart', () => { dragging = true }, { passive: true });
       window.addEventListener('touchmove', e => { if (dragging) setPos(e.touches[0].clientX) }, { passive: true });
       window.addEventListener('touchend', () => dragging = false);
     })();
 
-    /* ── TESTIMONIALS ───────────────────────── */
+    /* ── TESTIMONIALS ── */
     const testis = [
-      {
-        title: "Great Experience! Highly Recommended!",
-        quote: "Single sitting RCT — completely painless. Got my zirconia crown the next visit. Rates are nominal for such excellent treatment. They even served hot coffee while I waited!",
-        name: "Harish Kumar", role: "Patient · Vaishali, Ghaziabad"
-      },
-      {
-        title: "Best Dental Clinic in Vaishali!",
-        quote: "I went for my broken teeth. The doctor examined carefully, suggested RCT at affordable cost and provided personal care throughout. One of the genuinely best clinics in Vaishali.",
-        name: "Moses Samuel", role: "Patient · Vaishali"
-      },
-      {
-        title: "Highly Satisfied — 5 Stars!",
-        quote: "Doctor's rich experience was evident from the first minute. She listens patiently, clinic is spotlessly clean, and prices are very competitive. Will never go anywhere else.",
-        name: "Vertika Sharma", role: "Patient · Indirapuram"
-      }
+      { title: "Great Experience! Highly Recommended!", quote: "Single sitting RCT — completely painless. Got my zirconia crown the next visit. Rates are nominal for such excellent treatment. They even served hot coffee while I waited!", name: "Harish Kumar", role: "Patient · Vaishali, Ghaziabad" },
+      { title: "Best Dental Clinic in Vaishali!", quote: "I went for my broken teeth. The doctor examined carefully, suggested RCT at affordable cost and provided personal care throughout. One of the genuinely best clinics in Vaishali.", name: "Moses Samuel", role: "Patient · Vaishali" },
+      { title: "Highly Satisfied — 5 Stars!", quote: "Doctor's rich experience was evident from the first minute. She listens patiently, clinic is spotlessly clean, and prices are very competitive. Will never go anywhere else.", name: "Vertika Sharma", role: "Patient · Indirapuram" }
     ];
     let ti = 0;
     function renderT() {
@@ -3685,7 +3602,7 @@
     function prevT() { ti = (ti - 1 + testis.length) % testis.length; renderT() }
     function nextT() { ti = (ti + 1) % testis.length; renderT() }
 
-    /* ── BOOKING ────────────────────────────── */
+    /* ── BOOKING ── */
     function doBook() {
       const n = document.getElementById('bN').value.trim();
       const p = document.getElementById('bP').value.trim();
@@ -3698,23 +3615,19 @@
       window.open('https://wa.me/918076900264?text=' + encodeURIComponent(msg), '_blank');
     }
 
-    /* ── HERO SLIDER ────────────────────────── */
+    /* ── HERO SLIDER ── */
     function hsPrev() { if (window._hsGoTo) window._hsGoTo((window._hsCurrent - 1 + window._hsSlides.length) % window._hsSlides.length) }
     function hsNext() { if (window._hsGoTo) window._hsGoTo((window._hsCurrent + 1) % window._hsSlides.length) }
     (function () {
-
       const slider = document.getElementById('heroSlider');
       if (!slider) return;
-
       const slides = Array.from(slider.querySelectorAll('.hero-slide'));
       const dotsWrap = document.getElementById('heroSliderDots');
-      const DURATION = 5000; // ms per slide
-      let current = 0;
-      let timer = null;
-      window._hsCurrent = 0;  // ← add
-      window._hsSlides = slides;  // ← add
+      const DURATION = 5000;
+      let current = 0, timer = null;
+      window._hsCurrent = 0;
+      window._hsSlides = slides;
 
-      /* Build dots */
       slides.forEach((_, i) => {
         const d = document.createElement('button');
         d.className = 'hsd' + (i === 0 ? ' on' : '');
@@ -3725,43 +3638,26 @@
 
       function goTo(idx) {
         if (idx === current) return;
-        /* Deactivate current */
         slides[current].classList.remove('active');
         dotsWrap.children[current].classList.remove('on');
-        /* Activate new — restart pan by cloning the img node */
         current = idx;
         window._hsCurrent = idx;
-        const slide = slides[current];
-        slide.classList.add('active');
+        slides[current].classList.add('active');
         dotsWrap.children[current].classList.add('on');
-        /* Force animation restart */
-        const img = slide.querySelector('img');
-        if (img) {
-          img.style.animation = 'none';
-          void img.offsetWidth; /* reflow */
-          img.style.animation = '';
-        }
         restart();
-      } window._hsGoTo = goTo;
-
-      function next() { goTo((current + 1) % slides.length); }
-
-      function restart() {
-        clearInterval(timer);
-        timer = setInterval(next, DURATION);
       }
+      window._hsGoTo = goTo;
+      function next() { goTo((current + 1) % slides.length) }
+      function restart() { clearInterval(timer); timer = setInterval(next, DURATION) }
 
-      /* Pause on hover */
       slider.addEventListener('mouseenter', () => clearInterval(timer));
       slider.addEventListener('mouseleave', restart);
-      /* Touch swipe */
       let tx = 0;
-      slider.addEventListener('touchstart', e => { tx = e.touches[0].clientX; }, { passive: true });
+      slider.addEventListener('touchstart', e => { tx = e.touches[0].clientX }, { passive: true });
       slider.addEventListener('touchend', e => {
         const dx = e.changedTouches[0].clientX - tx;
         if (Math.abs(dx) > 40) dx < 0 ? next() : goTo((current - 1 + slides.length) % slides.length);
       }, { passive: true });
-
       restart();
     })();
   </script>
